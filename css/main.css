@@ -50,8 +50,34 @@ TABLE OF CONTENTS:
 
 /*----7.0 UTILITIES----*/
 
+.ctr-block {
+    margin: 0 auto;
+}
+
 .f-right {
     float: right;
+}
+
+.h-rule, .h-rule-wht {
+    height: .1em;
+}
+
+.h-rule {
+    background-color: #CBAA88;
+}
+
+.h-rule-wht {
+    background-color: #FCF2E8;
+}
+
+.txt-ctr, h2 {
+    text-align: center;
+}
+
+/*---colors---*/
+
+#process {
+    background-color: #585858;
 }
 
 

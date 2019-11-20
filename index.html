@@ -32,7 +32,7 @@
                 <header>
                     <h1><span>we are an authentic</span><br>micro roastery</h1>
                 </header>
-                <div></div> <!--horizontal rule-->
+                <div class="h-rule"></div> <!--horizontal rule-->
                 <p>small, dedicated and focused on quality</p>
             </div>
             <div class="col-sm-12 col-md-2">
@@ -43,16 +43,17 @@
 	<section id="featured">
 		<div class="wrapper row">
             <div class="col-sm-12 col-md-7 col-lg-6 f-right">  <!--bag images and frames--->
-                <img class="img-responsive" src="https://via.placeholder.com/500" alt="bag image">
-                <img src="" alt="smaller bag image">
+                <span><img class="img-responsive" src="https://via.placeholder.com/500" alt="bag image"></span>
+                <!----span tags to create border around large image--->
+                <img src="https://via.placeholder.com/200" alt="smaller bag image">
 			</div>
-			<div class="col-sm-5 col-lg-4">  <!--Bean name and information--->
+			<div class="col-sm-12 col-md-5 col-lg-4">  <!--Bean name and information--->
 				<header>
 					<p>our featured roast</p>
 					<h3>Evening Oak</h3>
 				</header>
 				<div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-6">
                         <ul>
                             <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
                             <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
@@ -61,16 +62,16 @@
                         <p>Medium-dark</p>
                     </div>
                     <div class="col-sm-2">
-                        <p>$19.99/lb</p>
+                        <p>$19.95/lb</p>
                     </div>
 				</div>
-                <div></div> <!--horizontal rule--->
+                <div class="h-rule"></div> <!--horizontal rule--->
                 <div class="row">
-                    <div class="col-sm-7 col-md-5 col-lg-4">
+                    <div class="col-sm-9 col-md-5 col-lg-4">
                         <p>Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
                     </div>
                     <div class="col-sm-3">
-                        <img src="" alt="country image">
+                        <img class="img-responsive" src="https://via.placeholder.com/50" alt="country image">
                         <p>eastern java, Indonesia</p>
                     </div>
                     <div class="col-sm-12 col-md-2">
@@ -85,7 +86,7 @@
     <section id="review">
         <div class="wrapper row">
             <div class="col-sm-4 col-md-2">
-                <img src="" alt="coffee review logo">
+                <img src="https://via.placeholder.com/100" alt="coffee review logo">
             </div>
             <div class="col-sm-6 col-md-8">
                 <blockquote>
@@ -101,43 +102,246 @@
         <header>
             <h2>The Beans</h2>
         </header>
+        
         <div class="row">
-            <div> <!---bag image--->
-                <img src="" alt="bag image">
+            
+            <div id="house">
+                <div class="col-sm-4"> <!---bag image--->
+                    <img src="https://via.placeholder.com/100x300" alt="bag image">
+                </div>
+                <div class="col-sm-8"> <!---information--->
+                    <header>
+                        <h3>House Blend</h3>
+                    </header>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>medium</p>
+                        </div>
+                        <div>
+                            <p>$17.95/lb</p>
+                        </div>
+                    </div>
+                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="row">
+                        <div>
+                            <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                        </div>
+                        <div>
+                            <p>Cajamarca & Moyobamba Regions, Peru</p>
+                        </div>
+                        <div><p><a href="#">Buy Now</a></p></div>
+                    </div>
+                </div>
             </div>
-            <div> <!---imformation--->
+            
+             <div id="sunrise">
+                <div class="col-sm-4"> <!---bag image--->
+                    <img src="https://via.placeholder.com/100x300" alt="bag image">
+                </div>
+                <div class="col-sm-8"> <!---information--->
+                    <header>
+                        <h3>Sunrise</h3>
+                    </header>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>light</p>
+                        </div>
+                        <div>
+                            <p>$17.95/lb</p>
+                        </div>
+                    </div>
+                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="row">
+                        <div>
+                            <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                        </div>
+                        <div>
+                            <p>La Chiapap, Mexico</p>
+                        </div>
+                        <div><p><a href="#">Buy Now</a></p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Midnight">
+                <div class="col-sm-4"> <!---bag image--->
+                    <img src="https://via.placeholder.com/100x300" alt="bag image">
+                </div>
+                <div class="col-sm-8"> <!---information--->
+                    <header>
+                        <h3>Midnight</h3>
+                    </header>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>dark</p>
+                        </div>
+                        <div>
+                            <p>$17.95/lb</p>
+                        </div>
+                    </div>
+                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="row">
+                        <div>
+                            <p>Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                        </div>
+                        <div>
+                            <p>Latin America</p>
+                        </div>
+                        <div><p><a href="#">Buy Now</a></p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Espresso">
+                <div class="col-sm-4"> <!---bag image--->
+                    <img src="https://via.placeholder.com/100x300" alt="bag image">
+                </div>
+                <div class="col-sm-8"> <!---information--->
+                    <header>
+                        <h3>Espresso</h3>
+                    </header>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                                <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>dark</p>
+                        </div>
+                        <div>
+                            <p>$19.95/lb</p>
+                        </div>
+                    </div>
+                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="row">
+                        <div>
+                            <p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                        </div>
+                        <div>
+                            <p>Latin America, Africa &amp; Indonesia</p>
+                        </div>
+                        <div><p><a href="#">Buy Now</a></p></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="process" class="txt-ctr">
+        <div class="wrapper">
+            <header>
+                <h2>The Process</h2>
+            </header>
+            <div class="row">
+                
+                <div>
+                    <div>          
+                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
+                    </div>
+                    <div class="h-rule-wht"></div>  <!---horizontal rule--->
+                    <div>
+                        <p>Twin Finch coffee is roasted in a hot air refractory-lined roaster with a level of control that is extraordinary</p>
+                    </div>
+                </div>
+                
+                 <div>
+                    <div>          
+                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
+                    </div>
+                    <div class="h-rule-wht"></div>  <!---horizontal rule--->
+                    <div>
+                        <p>The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment</p>
+                    </div>
+                </div>
+                
+                 <div>
+                    <div>          
+                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
+                    </div>
+                    <div class="h-rule-wht"></div>  <!---horizontal rule--->
+                    <div>
+                        <p>Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="brew" class="wrapper txt-ctr row">
+        <header class="col-sm-12">
+            <h4>Our evolving, eclectic selection of single-origin beans and blends are crafted to let you enjoy your finest cup at home.</h4>
+        </header>
+        <div class="h-rule col-sm-6 ctr-block"></div> <!---horizontal rule--->
+        <div class="col-sm-12">
+            <p>For the best ways to brew Twin Finch coffee at home, check out our friends at</p>
+        </div>
+        <div class="col-sm-8">
+            <a><img src="https://via.placeholder.com/200x40" alt=""></a> <!---epicurious logo--->
+        </div>
+    </section>
+    <section id="ship" class="txt-ctr">
+        <div class="wrapper row">
+            <div>
                 <header>
-                    <h3>House Blend</h3>
+                    <h3>We ship only the freshest whole bean coffee</h3>
                 </header>
-                <div class="row">
-                    <div>
-                        <ul>
-                            <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
-                            <li><img class="img-responsive" src="https://via.placeholder.com/25" alt="finch icon"></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>medium</p>
-                    </div>
-                    <div>
-                        <p>$19.99/lb</p>
-                    </div>
+                <div class="h-rule"></div>
+                <div>
+                    <p>Our rotating featured coffees are roasted as limited editions. Order availability may vary</p>
                 </div>
-                <div></div> <!---horizontal rule--->
-                <div class="row">
-                    <div>
-                        <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
-                    </div>
-                    <div>
-                        <img src="" alt=""> <!---country image--->
-                    </div>
-                    <div>
-                        <p>Cajamarca & Moyobamba Regions, Peru</p>
-                    </div>
-                    <div><p><a href="#">Buy Now</a></p></div>
+                 <div>
+                    <p>Your satisfaction is guaranteed</p>
                 </div>
-              
+                 <div>
+                    <p>Orders ship quickly and usually arrive in three business days</p>
+                </div>
             </div>
+            <div>
+                <img src="https://via.placeholder.com/100" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="find" class="wrapper">
+        <header>
+            <h2>Find Us</h2>
+        </header>
+        <div class="row">
             
         </div>
     </section>

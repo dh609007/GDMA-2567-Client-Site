@@ -48,7 +48,17 @@ TABLE OF CONTENTS:
 
 
 
-/*----7.0 UTILITIES----*/
+/*-----6.0 COMPONENTS-----*/
+
+label {
+    display: none;
+}
+
+footer label {
+    display: inline;
+}
+
+/*-----7.0 UTILITIES-----*/
 
 .ctr-block {
     margin: 0 auto;

@@ -48,6 +48,15 @@ TABLE OF CONTENTS:
 
 
 
+/*-----4.0 ELEMENTS-----*/
+
+/*---forms---*/
+
+input {
+    display: block;
+}
+
+
 /*-----6.0 COMPONENTS-----*/
 
 label {
@@ -56,6 +65,31 @@ label {
 
 footer label {
     display: inline;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:100%;
+}
+
+/*---navigagion---*/
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: inline-block;
 }
 
 /*-----7.0 UTILITIES-----*/

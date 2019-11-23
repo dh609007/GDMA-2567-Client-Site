@@ -6,48 +6,49 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/framework.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<title>Client Site Build</title>
+<title>Twin Finch Roastery</title>
 </head>
 
 <body>
-	<div id="bg-dk-brn">
-		<header class="wrapper row">
-			<nav class="col-md-6">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#featured">Featured</a></li>
-					<li><a href="#works">Roasts</a></li>
-					<li><a href="#">Process</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-	<div id="bg-hero"> <!--bg-image-->
-		<section id="hero" class="wrapper row">
-            <div class="col-sm-6">
-			    <img src="" alt=""> <!--logo-->
+	<header>
+        <div id="bg-dk-brn">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#roasts">Roasts</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#find">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-sm-6">
-                <header>
-                    <h1><span>we are an authentic</span><br>micro roastery</h1>
-                </header>
-                <div class="h-rule"></div> <!--horizontal rule-->
-                <p>small, dedicated and focused on quality</p>
+        </div>
+        <div id="bg-hero"> <!--bg-image-->
+            <div id="hero" class="wrapper row">
+                <div class="col-sm-6">
+                    <h1><img class="img-responsive" src="img/logo-twin-finch-2-color.svg" alt=""></h1> <!--logo-->
+                </div>
+                <div class="col-sm-6">
+                    <p><span>we are an authentic</span><br>micro roastery</p>
+                    <div class="h-rule"></div> <!--horizontal rule-->
+                    <p>small, dedicated and focused on quality</p>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <p><a href="#">learn more</a></p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-2">
-                <p><a href="#">learn more</a></p>
-            </div>
-		</section>
-	</div>
+        </div>
+    </header>
+       
 	<section id="featured">
 		<div class="wrapper row">
-            <div class="col-sm-12 col-md-7 col-lg-6 f-right">  <!--bag images and frames--->
+            <div class="col-sm-12 col-md-7 col-lg-6 f-right">  <!--bag images and frames-->
                 <span><img class="img-responsive" src="https://via.placeholder.com/500" alt="bag image"></span>
-                <!----span tags to create border around large image--->
+                <!--span tags to create border around large image-->
                 <img src="https://via.placeholder.com/200" alt="smaller bag image">
 			</div>
-			<div class="col-sm-12 col-md-5 col-lg-4">  <!--Bean name and information--->
+			<div class="col-sm-12 col-md-5 col-lg-4">  <!--Bean name and information-->
 				<header>
 					<p>our featured roast</p>
 					<h3>Evening Oak</h3>
@@ -61,43 +62,40 @@
                         </ul>
                         <p>Medium-dark</p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-6">
                         <p>$19.95/lb</p>
                     </div>
 				</div>
-                <div class="h-rule"></div> <!--horizontal rule--->
+                <div class="h-rule"></div> <!--horizontal rule-->
                 <div class="row">
-                    <div class="col-sm-9 col-md-5 col-lg-4">
+                    <div class="col-sm-9 col-md-12">
                         <p>Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
                     </div>
-                    <div class="col-sm-3">
-                        <img class="img-responsive" src="https://via.placeholder.com/50" alt="country image">
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="https://via.placeholder.com/50" alt="">  <!--country icon-->
                         <p>eastern java, Indonesia</p>
                     </div>
-                    <div class="col-sm-12 col-md-2">
+                    <div class="col-sm-12 col-md-6">
                         <p><a href="#">buy now</a></p>
                     </div>
                 </div>
 			</div>
-			
 		</div>
-		
 	</section>
-    <section id="review">
+    
+    <blockquote id="review">
         <div class="wrapper row">
             <div class="col-sm-4 col-md-2">
-                <img src="https://via.placeholder.com/100" alt="coffee review logo">
+                <img src="https://via.placeholder.com/100" alt=""><!--coffee review logo-->
             </div>
             <div class="col-sm-6 col-md-8">
-                <blockquote>
-                    <p>This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
-                    <footer>
-                        <p>&mdash;Cofee Review on our House Blend</p>
-                    </footer>
-                </blockquote>
+                <p>This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
+                <footer>
+                    <p>&mdash;Cofee Review on our House Blend</p>
+                </footer>
             </div>
         </div>
-    </section>
+    </blockquote>
     
     <section id="roasts" class="wrapper">
         <header>
@@ -105,12 +103,11 @@
         </header>
         
         <div class="row">
-            
-            <div id="house" class="col-sm-12 col-md-3">
-                <div class="col-sm-4 col-md-12"> <!---bag image--->
-                    <img src="https://via.placeholder.com/100x300" alt="bag image">
+            <section id="house" class="col-sm-12 col-md-3">
+                <div class="col-sm-4 col-md-12"> <!--bag image-->
+                    <img src="https://via.placeholder.com/100x300" alt="product image">
                 </div>
-                <div class="col-sm-8 col-md-12"> <!---information--->
+                <div class="col-sm-8 col-md-12"> <!--information-->
                     <header>
                         <h3>House Blend</h3>
                     </header>
@@ -127,34 +124,29 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
-                            <div>
-                                <p>$17.95/lb</p>
-                            </div>
+                            <p>$17.95/lb</p>
                         </div>
                     </div>
-                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="h-rule"></div> <!--horizontal rule-->
+                    <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
                     <div class="row">
-                        <div class="col-sm-12">
-                            <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
-                        </div>
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt=""> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Cajamarca & Moyobamba Regions, Peru</p>
                         </div>
-                        <div class="col-sm-12 col-md-8">
-                            <p><a href="#">Buy Now</a></p>
-                        </div>
-                    </div>
+                    </div> 
+                    <p><a href="#">Buy Now</a></p>
+                    
                 </div>
-            </div>
+            </section>
             
-            <div id="sunrise" class="col-sm-12 col-md-3">
-                <div class="col-sm-4 col-md-12"> <!---bag image--->
+            <section id="sunrise" class="col-sm-12 col-md-3">
+                <div class="col-sm-4 col-md-12"> <!--bag image-->
                     <img src="https://via.placeholder.com/100x300" alt="bag image">
                 </div>
-                <div class="col-sm-8 col-md-12"> <!---information--->
+                <div class="col-sm-8 col-md-12"> <!--information-->
                     <header>
                         <h3>Sunrise</h3>
                     </header>
@@ -175,13 +167,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="h-rule"></div> <!--horizontal rule-->
                     <div class="row">
                         <div class="col-sm-12">
                             <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
                         </div>
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>La Chiapas, Mexico</p>
@@ -191,13 +183,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
-            <div id="midnight" class="col-sm-12 col-md-3">
-                <div class="col-sm-4 col-md-12"> <!---bag image--->
+            <section id="midnight" class="col-sm-12 col-md-3">
+                <div class="col-sm-4 col-md-12"> <!--bag image-->
                     <img src="https://via.placeholder.com/100x300" alt="bag image">
                 </div>
-                <div class="col-sm-8 col-md-12"> <!---information--->
+                <div class="col-sm-8 col-md-12"> <!--information-->
                     <header>
                         <h3>Midnight</h3>
                     </header>
@@ -221,13 +213,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="h-rule"></div> <!--horizontal rule-->
                     <div class="row">
                         <div class="col-sm-12">
                             <p>Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
                         </div>
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America</p>
@@ -237,13 +229,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
-             <div id="espresso" class="col-sm-12 col-md-3">
-                <div class="col-sm-4 col-md-12"> <!---bag image--->
+             <section id="espresso" class="col-sm-12 col-md-3">
+                <div class="col-sm-4 col-md-12"> <!--bag image-->
                     <img src="https://via.placeholder.com/100x300" alt="bag image">
                 </div>
-                <div class="col-sm-8 col-md-12"> <!---information--->
+                <div class="col-sm-8 col-md-12"> <!--information-->
                     <header>
                         <h3>Espresso</h3>
                     </header>
@@ -267,13 +259,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="h-rule"></div> <!---horizontal rule--->
+                    <div class="h-rule"></div> <!--horizontal rule-->
                     <div class="row">
                         <div class="col-sm-12">
                             <p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
                         </div>
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!---country image--->
+                            <img class="img-responsive" src="https://via.placeholder.com/50" alt="country icon"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America, Africa &amp; Indonesia</p>
@@ -283,9 +275,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-        
     </section>
     <section id="process" class="txt-ctr">
         <div class="wrapper">
@@ -294,31 +285,25 @@
             </header>
             <div class="row">
                 
-                <div class="col-sm-12 col-md-4">
-                    <div>          
-                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
-                    </div>
-                    <div class="h-rule-wht col-sm-12"></div>  <!---horizontal rule--->
+                <div class="col-sm-12 col-md-4">         
+                    <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3-->
+                    <div class="h-rule-wht col-sm-12"></div>  <!--horizontal rule-->
                     <div>
                         <p>Twin Finch coffee is roasted in a hot air refractory-lined roaster with a level of control that is extraordinary</p>
                     </div>
                 </div>
                 
-                 <div class="col-sm-12 col-md-4">
-                    <div>          
-                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
-                    </div>
-                    <div class="h-rule-wht col-sm-12"></div>  <!---horizontal rule--->
+                 <div class="col-sm-12 col-md-4">         
+                    <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3-->
+                    <div class="h-rule-wht col-sm-12"></div>  <!--horizontal rule-->
                     <div>
                         <p>The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment</p>
                     </div>
                 </div>
                 
-                 <div class="col-sm-12 col-md-4">
-                    <div>          
-                        <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3--->
-                    </div>
-                    <div class="h-rule-wht col-sm-12"></div>  <!---horizontal rule--->
+                 <div class="col-sm-12 col-md-4">         
+                    <img src="https://via.placeholder.com/75" alt="roast icon"> <!--roast icon  IS THIS AN H3-->
+                    <div class="h-rule-wht col-sm-12"></div>  <!--horizontal rule-->
                     <div>
                         <p>Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process</p>
                     </div>
@@ -331,30 +316,22 @@
         <header class="col-sm-12">
             <h4>Our evolving, eclectic selection of single-origin beans and blends are crafted to let you enjoy your finest cup at home.</h4>
         </header>
-        <div class="h-rule col-sm-6 ctr-block"></div> <!---horizontal rule--->
+        <div class="h-rule col-sm-6 ctr-block"></div> <!--horizontal rule-->
         <div class="col-sm-12">
             <p>For the best ways to brew Twin Finch coffee at home, check out our friends at</p>
         </div>
         <div class="col-sm-8">
-            <a><img src="https://via.placeholder.com/200x40" alt=""></a> <!---epicurious logo--->
+            <a><img src="https://via.placeholder.com/200x40" alt=""></a> <!--epicurious logo-->
         </div>
     </section>
     <section id="ship" class="txt-ctr">
         <div class="wrapper row">
             <div class="col-sm-12 col-md-7 col-md-8">
-                <header>
-                    <h3>We ship only the freshest whole bean coffee</h3>
-                </header>
+                <p>We ship only the freshest whole bean coffee</p>
                 <div class="h-rule"></div>
-                <div>
-                    <p>Our rotating featured coffees are roasted as limited editions. Order availability may vary</p>
-                </div>
-                 <div>
-                    <p>Your satisfaction is guaranteed</p>
-                </div>
-                 <div>
-                    <p>Orders ship quickly and usually arrive in three business days</p>
-                </div>
+                <p>Our rotating featured coffees are roasted as limited editions. Order availability may vary</p>
+                <p>Your satisfaction is guaranteed</p>
+                <p>Orders ship quickly and usually arrive in three business days</p>
             </div>
             <div class="col-sm-12 col-md-5 col-lg-4">
                 <img src="https://via.placeholder.com/100" alt="">
@@ -368,33 +345,34 @@
         </header>
         <div class="row">
             
-            <!---google map--->
+            <!--google map-->
             <div class="col-sm-12 col-md-5 com-lg-6">
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=457%20Market%20St%2C%20Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.divi-discounts.com"></a>
+                        <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=457%20Market%20St%2C%20Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
-                    <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+                    
                 </div>
             </div>
             
             <form>
-                <label for="first-name">First Name</label>
-                <input class="col-sm-12 col-md-4 col-lg-6" type="text" name="first-name" id="first-name" placeholder="first name">
-                <label for="last-name">Last Name</label>
-                <input class="col-sm-12 col-md-4 col-lg-6" type="text" name="last-name" id="last-name" placeholder="last name">
-                <label for="email">Email</label>
-                <input class="col-sm-12 col-md-4 col-lg-6" type="email" name="email" id="email" placeholder="email">
-                <select class="col-sm-12 col-md-4 col-lg-6" name="roast">
-                    <option value="feat">Featured</option>
-                    <option value="house">House Blend</option>
-                    <option value="sunrise">Sunrise</option>
-                    <option value="midnight">Midnight</option>
-                    <option value="espresso">Espresso</option>
-                </select>
+                <div class="col-sm-12 col-md-4 col-lg-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="first name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="last name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <select name="roast">
+                        <option value="feat">Featured</option>
+                        <option value="house">House Blend</option>
+                        <option value="sunrise">Sunrise</option>
+                        <option value="midnight">Midnight</option>
+                        <option value="espresso">Espresso</option>
+                    </select>
+                </div>
             
-                <textarea class="col-sm-12 col-md-3 col-lg-6" name="comments" id="comments" rows="10em" cols="100%"> comments </textarea>
-                
+                <textarea class="col-sm-12 col-md-3 col-lg-6" name="comments" id="comments" rows="10em" cols="100%"></textarea>
                 
                  <div class="col-sm-12 col-md-3 col-lg-2">
                     <p><a href="#">Submit</a></p>
@@ -402,37 +380,40 @@
             </form>
         </div>
      </section>
-    <footer class="wrapper">
-        <div class="row">
-            <form class="col-sm-12 col-md-6 f-right">
-                <label for="news">Signup for our email Newsletter</label>
-                <input class="col-sm-12" type="email" name="news" id="news">
-            </form>
-        
-            <div class="col-sm-3">
-                <img src="https://via.placeholder.com/100x75" alt=""> <!----small logo---->
+    <div id="bg-footer">
+        <footer class="wrapper">
+            <div class="row">
+                <form class="col-sm-12 col-md-6 f-right">
+                    <label for="news">Signup for our email Newsletter</label>
+                    <input type="email" name="news" id="news">
+                    <p><a href="#">submit</a></p>
+                </form>
+
+                <div class="col-sm-3">
+                    <img src="https://via.placeholder.com/100x75" alt=""> <!--small logo-->
+                </div>
+
+                <div class="col-sm-5">
+                    <p><a href="mailto:hello@twinfinch.com">hello@twinfinch.com</a></p>
+                    <address>457 NW Market st<br>Portland,OR</address>
+                    <p><a href="tel:1-308-123-4567">308.123.4567</a></p>
+                </div>
+
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><span>facebook</span></a></li>
+                        <li><a href="https://twitter.com/?lang=en" target="_blank"><span>twitter</span></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><span>instagram</span></a></li>
+                    </ul>
+                </div>
+
             </div>
-            
-            <div class="col-sm-5">
-                <p><a href="mailto:hello@twinfinch.com">hello@twinfinch.com</a></p>
-                <p>457 NW Market st<br>Portland,OR</p>
-                <p><a href="tel:13081234567">308.123.4567</a></p>
-            </div>
-            
-            <div class="col-sm-4">
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><span>facebook</span></a></li>
-                    <li><a href="https://twitter.com/?lang=en" target="_blank"><span>twitter</span></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><span>instagram</span></a></li>
-                </ul>
-            </div>
-        
-        </div>
-    </footer>
+        </footer>
+    </div>
 	
 
 
-<!---javascript ALWAYS goes at the bottom--->
+<!--javascript ALWAYS goes at the bottom-->
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	

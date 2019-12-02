@@ -50,18 +50,49 @@ TABLE OF CONTENTS:
 
 /*-----4.0 ELEMENTS-----*/
 
+
 /*---forms---*/
+
 
 input {
     display: block;
 }
 
-
-/*-----6.0 COMPONENTS-----*/
-
 label {
     display: none;
 }
+
+
+/*---lists---*/
+
+
+li {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*---media---*/
+
+:focus {
+    outline: none;
+}
+
+#bg-hero {
+    background-image: url("../img/img-hero.jpg");
+}
+
+#process {
+    background-image: url("../img/img-process.jpg");
+}
+
+
+
+/*-----6.0 COMPONENTS-----*/
+
 
 footer label {
     display: inline;
@@ -83,14 +114,9 @@ footer label {
 
 /*---navigagion---*/
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
 
-li {
-    display: inline-block;
-}
+
+
 
 /*-----7.0 UTILITIES-----*/
 
@@ -120,8 +146,21 @@ li {
 
 /*---colors---*/
 
-#process {
-    background-color: #585858;
+#bg-dk-brn, #bg-footer {
+    background-color: #1F0C00;
 }
+
+#brew {
+    background-color: #F4EBE4;
+}
+
+#featured, #roasts {
+    background-color: #FCF2E8;
+}
+
+blockquote {
+    background-color: #EBD3B9;
+}
+
 
 

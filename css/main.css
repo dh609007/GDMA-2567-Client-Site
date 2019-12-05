@@ -53,6 +53,26 @@ TABLE OF CONTENTS:
 
 /*---forms---*/
 
+#find input, textarea { 
+    background-color: #F4EBE4;
+    border: .1em solid #F4EBE4;
+}
+
+#find input { 
+    padding: .5em .3em;
+}
+
+#find input:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
+textarea:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
+footer form input, footer form p {
+    display: inline;
+}
 
 input {
     display: block;
@@ -62,12 +82,24 @@ label {
     display: none;
 }
 
+input, select {
+    width: 100%;
+}
+
+footer input {
+    width: 70%;
+}
+
+placeholder {
+    color: #1F0C00;
+}
+
 
 /*---lists---*/
 
 
 li {
-    display: inline-block;
+    display: inline;
 }
 
 li a {
@@ -79,6 +111,21 @@ ul {
     padding-left: 0;
 }
 
+#sprites li a {
+    display: inline-block;
+}
+
+#sprites a {
+    width: 27px;
+    height: 26px;
+}
+
+#sprites a:hover {
+    background-position: 0 -25px;
+}
+
+
+
 /*---media---*/
 
 :focus {
@@ -86,11 +133,11 @@ ul {
 }
 
 #bg-hero {
-    background-image: url("../img/img-hero.jpg");
+    background-image: url("../img/bg-img-hero.jpg");
 }
 
 #process {
-    background-image: url("../img/img-process.jpg");
+    background-image: url("../img/bg-img-process.jpg");
 }
 
 footer li:first-child a{
@@ -109,14 +156,31 @@ footer li a {
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px){
+    #ship img {
+        display: none; 
+    }
+
+}
+
+
 
 /*---typography---*/
 
-body {
+html {
+    font-size: 1rem;
+    color: #1F0C00; 
+}
+
+body, #featured .description, #roasts .description {
     font-family: aaux next, sans-serif;
 }
 
-blockquote footer, h2 {
+nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts p, #brew p:first-child, #ship p:first-child, input, #find p, footer {
+    font-family: oswald, sans-serif;
+}
+
+blockquote footer, h2, #bg-hero p {
     font-weight: 300;
 }
 
@@ -124,17 +188,122 @@ featured header p {
     font-weight: 400;
 }
 
-#bg-hero p, #bg-hero a, #roasts a, #process p, footer {
+#bg-hero span {
+    font-weight: 700;
+}
+
+footer p {
+    font-style: normal;
+}
+
+footer li span {
+    display: none;
+}
+
+h2, h3, #bg-hero a, #bg-hero span, .btn {
+    text-transform: uppercase;
+}
+
+#bg-hero p, #bg-hero a, #roasts a, #process p, #process h2, footer {
     color: #FCF2E8;
 }
 
-nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts, #brew p:first-child, #ship p:first-child, input, footer {
-    font-family: oswald, sans-serif;
+blockquote footer {
+    color: #1F0C00; 
 }
 
-h2, h3, #bg-hero a {
-    text-transform: uppercase;
+
+/*---font-sizes---*/
+
+#bg-hero p span {
+    font-size: 1.8rem;
 }
+
+#bg-hero p, blockquote footer, footer label {
+    font-size: 1.0rem;
+}
+
+#bg-hero p a, .btn, #bg-hero, footer {
+    font-size: .8rem;
+}
+
+.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3, #ship p:first-child {
+    font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px){ /*-------need new sizes--------*/
+    
+    #bg-hero p span {
+    font-size: 2.5rem;
+    }
+
+    #bg-hero p, blockquote footer, footer label {
+        font-size: 1.2rem;
+    }
+
+    nav, #featured p, .btn {
+        font-size: .8rem;
+    }
+    
+    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer {
+        font-size: .8rem;
+    }
+    
+    .description {
+        font-size: .9rem;
+    }
+
+    blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3, #ship p:first-child {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){ /*-------need new sizes--------*/
+    
+    #bg-hero p span {
+    font-size: 1.8rem;
+    }
+
+    #bg-hero p, blockquote footer, footer label {
+        font-size: 1.0rem;
+    }
+
+    #bg-hero p a, .btn, #bg-hero, footer {
+        font-size: .8rem;
+    }
+
+    .description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3, #ship p:first-child {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
 
 /*-----6.0 COMPONENTS-----*/
 
@@ -168,7 +337,7 @@ nav a, footer a {
     color: #F4EBE4;
 }
 
-nav a:hover, footer a:hover {
+nav a:hover, footer address a:hover {
     color: #CBAA88;
     border-bottom: .1em solid  #CBAA88;
 }
@@ -180,12 +349,28 @@ nav a:hover, footer a:hover {
     -webkit-border-radius: .3em;
     -o-border-radius: .3em;
     border-radius: .3em;
-    padding: .3em 2em;
+    padding: .5em 2em;
+    display: block;
+} 
+
+footer form a {
+    border: .5px solid #F4EBE4;
+    -moz-border-radius: .3em;
+    -ms-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -o-border-radius: .3em;
+    border-radius: .3em;
+    padding: .1em 2em;
 } 
 
 #bg-hero p a:hover {
     border: .5px solid #1F0C00;
     background-color: #1F0C00;
+}
+
+footer form a:hover {
+    border: .5px solid #CBAA88;
+    background-color: #CBAA88;
 }
 
 .btn {
@@ -196,7 +381,8 @@ nav a:hover, footer a:hover {
     -o-border-radius: .3em;
     border-radius: .3em;
     background-color: #1F0C00;
-    padding: .3em 2em;
+    padding: .5em 2em;
+    display: block;
 }
 
 .btn:hover {
@@ -208,16 +394,42 @@ nav a:hover, footer a:hover {
     color: #F4EBE4; 
 }
 
-/*---navigagion---*/
+@media only screen and (min-width: 768px){
+    .btn, #bg-hero p a {
+        display: inline;
+    }
+}
 
+@media only screen and (min-width: 1024px){
+    .btn, #bg-hero p a {
+        display: inline;
+    }
+}
 
+/*---navigation---*/
 
+#bg-dk-brn {
+    padding: .1em 0;
+}
+
+/*---frames---*/
+
+h2 {
+    display: inline-block;
+    border: .1em solid #CBAA88;
+    padding: .6em .8em;
+}
+
+#process h2 {
+    border: .1em solid #FCF2E8;
+}
 
 
 /*-----7.0 UTILITIES-----*/
 
 .ctr-block {
     margin: 0 auto;
+    float: none;
 }
 
 .f-right {
@@ -239,6 +451,7 @@ nav a:hover, footer a:hover {
 .txt-ctr, h2 {
     text-align: center;
 }
+
 
 /*---colors---*/
 

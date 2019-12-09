@@ -70,6 +70,10 @@ textarea:hover {
     border-bottom: .1em solid #1F0C00;
 }
 
+footer label {
+    display: inline;
+}
+
 footer form input, footer form p {
     display: inline;
 }
@@ -111,18 +115,6 @@ ul {
     padding-left: 0;
 }
 
-#sprites li a {
-    display: inline-block;
-}
-
-#sprites a {
-    width: 27px;
-    height: 26px;
-}
-
-#sprites a:hover {
-    background-position: 0 -25px;
-}
 
 
 
@@ -176,7 +168,7 @@ body, #featured .description, #roasts .description {
     font-family: aaux next, sans-serif;
 }
 
-nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts p, #brew p:first-child, #ship p:first-child, input, #find p, footer {
+nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts p, #brew p:first-child, #ship p:first-child, input, #find p, textarea, footer {
     font-family: oswald, sans-serif;
 }
 
@@ -219,98 +211,99 @@ blockquote footer {
     font-size: 1.8rem;
 }
 
-#bg-hero p, blockquote footer, footer label {
+#bg-hero p, footer label {
     font-size: 1.0rem;
 }
 
-#bg-hero p a, .btn, #bg-hero, footer {
+#bg-hero p a, .btn, #bg-hero, footer, blockquote footer {
     font-size: .8rem;
 }
 
-.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
-    font-size: 1.2rem;
+.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input, textarea {
+    font-size: .9rem;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: .95rem;
 }
 
 h3, #ship p:first-child {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
-@media only screen and (min-width: 768px){ /*-------need new sizes--------*/
+@media only screen and (min-width: 768px){
     
     #bg-hero p span {
     font-size: 2.5rem;
     }
 
-    #bg-hero p, blockquote footer, footer label {
+    #bg-hero p, footer label {
         font-size: 1.2rem;
     }
 
-    nav, #featured p, .btn {
+    nav, #featured p, .btn, #find input, textarea {
         font-size: .8rem;
     }
     
-    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer {
+    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer, blockquote footer, #roasts p {
         font-size: .8rem;
     }
     
-    .description {
+    blockquote, #roasts .description, #process p, #ship p, #find p {
         font-size: .9rem;
     }
 
-    blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
+    #brew p:first-child {
         font-size: 1.2rem;
     }
 
-    h2 {
+    h2, #ship p:first-child {
         font-size: 1.3rem;
     }
 
-    h3, #ship p:first-child {
-        font-size: 1.5rem;
+    h3 {
+        font-size: 1.2rem;
     }
 }
 
-@media only screen and (min-width: 1024px){ /*-------need new sizes--------*/
-    
-    #bg-hero p span {
-    font-size: 1.8rem;
-    }
-
-    #bg-hero p, blockquote footer, footer label {
+@media only screen and (min-width: 1024px){ 
+    nav {
         font-size: 1.0rem;
     }
-
-    #bg-hero p a, .btn, #bg-hero, footer {
-        font-size: .8rem;
+    
+    #bg-hero p span {
+        font-size: 4.5rem;
     }
-
-    .description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input {
+    
+    #bg-hero p {
+        font-size: 1.9rem;
+    }
+    
+    .btn {
         font-size: 1.2rem;
     }
-
-    h2 {
-        font-size: 1.3rem;
+    
+    #bg-hero p a, #featured p, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, textarea, footer {
+        font-size: 1.25rem;
     }
-
-    h3, #ship p:first-child {
-        font-size: 1.4rem;
+    
+    
+    h3, h2, #ship p:first-child {
+        font-size: 1.9rem;
     }
+    
+    blockquote, #brew p, #brew p:first-child {
+        font-size: 1.6rem; 
+    }
+    
 }
 
 
 
 
+/*-----5.0 COMPONENTS-----*/
 
-/*-----6.0 COMPONENTS-----*/
-
-
-footer label {
-    display: inline;
-}
+/*---framework---*/
 
 .mapouter {
     position:relative;
@@ -327,6 +320,10 @@ footer label {
 }
 
 
+/*-----6.0 COMPONENTS-----*/
+
+
+
 /*---buttons---*/
 
 a {
@@ -339,6 +336,10 @@ nav a, footer a {
 
 nav a:hover, footer address a:hover {
     color: #CBAA88;
+    border-bottom: .1em solid  #CBAA88;
+}
+
+#brew a:hover {
     border-bottom: .1em solid  #CBAA88;
 }
 
@@ -390,6 +391,20 @@ footer form a:hover {
     background-color: #EBD3B9;
 }
 
+#sprites li a {
+    display: inline-block;
+}
+
+#sprites a {
+    width: 27px;
+    height: 26px;
+}
+
+#sprites a:hover {
+    background-position: 0 -25px;
+}
+
+
 .btn:visited {
     color: #F4EBE4; 
 }
@@ -412,17 +427,86 @@ footer form a:hover {
     padding: .1em 0;
 }
 
+nav li {
+    margin-right: 4.5em;
+}
+
 /*---frames---*/
 
 h2 {
     display: inline-block;
-    border: .1em solid #CBAA88;
+    border: .05em solid #CBAA88;
     padding: .6em .8em;
 }
 
-#process h2 {
-    border: .1em solid #FCF2E8;
+
+
+#ship img, #featured span {
+    border: .05em solid #CBAA88;
+    padding: .7em;
 }
+
+#process h2 {
+    border: .05em solid #FCF2E8;
+}
+
+
+/*---spacing---*/
+
+
+h2 {
+    margin-bottom: 3em;
+}
+#bg-hero {
+    padding: 10em 0;
+}
+
+#bg-review, #ship {
+    padding: 1em 0;
+}
+
+#featured, #brew, #bg-footer {
+    padding: 2em 0;
+}
+
+#roasts, #process, #find {
+    padding: 5em 0;
+}
+
+#bg-hero p, #featured p:first-child {
+    margin-bottom: .5em;
+}
+
+#process img {
+    margin-bottom: 2em;
+}
+
+#bg-hero .h-rule {
+    margin-top: 1em;
+}
+
+#featured h3 {
+    margin-top: 0;
+}
+
+/*---positioning---*/
+
+#house {
+    position: relative;
+}
+
+#icon-98 {
+    position: absolute;
+    top: -1em;
+    left: 1em;
+}
+
+
+
+
+
+
+
 
 
 /*-----7.0 UTILITIES-----*/
@@ -459,7 +543,7 @@ h2 {
     background-color: #1F0C00;
 }
 
-#brew {
+#ship {
     background-color: #F4EBE4;
 }
 
@@ -467,7 +551,7 @@ h2 {
     background-color: #FCF2E8;
 }
 
-blockquote {
+#bg-review {
     background-color: #EBD3B9;
 }
 

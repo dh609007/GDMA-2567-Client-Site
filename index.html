@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-sm-6">
                     <p>an authentic<br><span>micro roastery</span></p>
-                    <div class="h-rule"></div> <!--horizontal rule-->
+                    <div class="h-rule"></div>
                     <p>small, dedicated and focused on quality</p>
                 </div>
                 <div class="col-sm-12 col-md-4">
@@ -48,9 +48,9 @@
           <div class="col-sm-12 col-md-7 col-lg-6 f-right">  <!--bag images and frames-->
               <span><img class="img-responsive" src="img/pkg-wht.png" alt="bag image" data-rjs="2"></span>
               <!--span tags to create border around large image-->
-              <img src="img/pkg-blk.png" alt="smaller bag image" data-rjs="2">
+              <img src="img/pkg-blk.png" alt="smaller bag image" data-rjs="2" width="100">
           </div>
-          <div class="col-sm-12 col-md-5 col-lg-4">  <!--Bean name and information-->
+          <div class="col-sm-12 col-md-5 col-lg-4">
               <header>
                   <p>our featured roast</p>
                   <h3>Evening Oak</h3>
@@ -84,20 +84,21 @@
           </div>
         </div>
 	</section>
-    
-    <blockquote>
-        <div class="wrapper row">
-            <div class="col-sm-4 col-md-2">
-                <a href="https://www.coffeereview.com/" target="_blank"><img class="img-responsive" src="img/logo-coffee-review.png" alt="coffeereview.com link" data-rjs="2"></a><!--coffee review logo-->
+    <div id="bg-review">
+        <blockquote>
+            <div class="wrapper row">
+                <div class="col-sm-4 col-md-2">
+                    <a href="https://www.coffeereview.com/" target="_blank"><img class="img-responsive" src="img/logo-coffee-review.png" alt="coffeereview.com link" data-rjs="2"></a><!--coffee review logo-->
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <p>"This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.""</p>
+                    <footer>
+                        <p>&mdash;Coffee Review on our House Blend</p>
+                    </footer>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-8">
-                <p>"This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.""</p>
-                <footer>
-                    <p>&mdash;Coffee Review on our House Blend</p>
-                </footer>
-            </div>
-        </div>
-    </blockquote>
+        </blockquote>
+    </div>
     
     <section id="roasts">
         <header class="txt-ctr">
@@ -109,7 +110,7 @@
                 <div class="row">
                     <div class="col-sm-4 col-md-12"> 
                     <img class="img-responsive" src="img/pkg-wht.png" alt="product image" data-rjs="2">
-                    <img class="img-responsive" src="img/icon-98.svg" alt="coffee review rating 98">
+                    <img id="icon-98" class="img-responsive" src="img/icon-98.svg" alt="coffee review rating 98" width="40">
                     </div>
                     <div class="col-sm-8 col-md-12"> 
                         <header>
@@ -131,7 +132,7 @@
                             <p class="description">Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
                         <div class="row">
                             <div class="col-sm-4 col-md-12">
-                                <img class="img-responsive" src="img/icon-peru.svg" alt=""> <!--country image-->
+                                <img class="img-responsive" src="img/icon-peru.svg" alt="" width="70"> <!--country image-->
                             </div>
                             <div class="col-sm-8 col-md-12">
                                 <p>Cajamarca &amp; Moyobamba Regions, Peru</p>
@@ -166,7 +167,7 @@
                         <p class="description">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-mex.svg" alt=""> <!--country image-->
+                            <img class="img-responsive" src="img/icon-mex.svg" alt="" width="150"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>La Chiapas, Mexico</p>
@@ -204,7 +205,7 @@
                         <p class="description">Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-latin-am.svg" alt=""> <!--country image-->
+                            <img class="img-responsive" src="img/icon-latin-am.svg" alt="" width="120"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America</p>
@@ -242,7 +243,7 @@
                         <p class="description">Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-world.svg" alt=""> <!--country image-->
+                            <img class="img-responsive" src="img/icon-world.svg" alt="" width="120"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America, Africa &amp; Indonesia</p>
@@ -268,7 +269,7 @@
                         <img src="img/icon-roast.svg" alt="">
                     </div>
                     <div class="h-rule-wht col-sm-12"></div>
-                    <div class="col-sm-12"><!--horizontal rule-->
+                    <div class="col-sm-12">
                         <p>Twin Finch coffee is roasted in a hot air refractory-lined roaster with a level of control that is extraordinary</p>
                     </div>
                 </div>
@@ -278,7 +279,7 @@
                         <img src="img/icon-roast.svg" alt="">
                     </div>
                     <div class="h-rule-wht col-sm-12"></div>
-                    <div class="col-sm-12"><!--horizontal rule-->
+                    <div class="col-sm-12">
                         <p>The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment</p>
                     </div>
                 </div>
@@ -302,7 +303,9 @@
             <p>Our evolving, eclectic selection of single-origin beans and blends are crafted to let you enjoy your finest cup at home.</p>
             <div class="h-rule"></div> <!--horizontal rule-->
             <p>For the best ways to brew Twin Finch coffee at home, check out our friends at</p>
-            <a href="https://www.epicurious.com/expert-advice/how-to-make-coffee-the-best-way-to-brew-coffee-article" target="_blank"><img class="img-responsive" src="img/logo-epicurious.png" alt="" data-rjs="2"></a> <!--epicurious logo-->
+            <div class="col-md-2 ctr-block">
+                <a href="https://www.epicurious.com/expert-advice/how-to-make-coffee-the-best-way-to-brew-coffee-article" target="_blank"><img class="img-responsive" src="img/logo-epicurious.png" alt="" data-rjs="2"></a>
+            </div>
         </div>
     </div>
     
@@ -355,7 +358,7 @@
                     </select>
                 </div>
             
-                <textarea class="col-sm-12 col-md-3 col-lg-6" name="comments" id="comments" rows="10" cols="100"></textarea>
+                <textarea class="col-sm-12 col-md-3 col-lg-6" name="comments" id="comments" rows="10" cols="100" placeholder="comments"></textarea>
                 
                  <div class="col-sm-12 col-md-3 col-lg-2">
                     <p><a class="btn" href="#">Submit</a></p>

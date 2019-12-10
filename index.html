@@ -43,12 +43,12 @@
         </div>
     </header>
        
-	<section id="featured" class="row">
-        <div class="wrapper">
-          <div class="col-sm-12 col-md-7 col-lg-6 f-right">  <!--bag images and frames-->
-              <span><img class="img-responsive" src="img/pkg-wht.png" alt="bag image" data-rjs="2"></span>
+	<section id="featured">
+        <div class="wrapper row">
+          <div class="col-sm-12 col-md-7 f-right pos-rel">  <!--bag images and frames-->
+              <img class="pos-rel" src="img/pkg-blk.png" alt="smaller bag image" data-rjs="2">
+              <span class="pos-abs"><img class="" src="img/pkg-wht.png" alt="bag image" data-rjs="2"></span>
               <!--span tags to create border around large image-->
-              <img src="img/pkg-blk.png" alt="smaller bag image" data-rjs="2" width="100">
           </div>
           <div class="col-sm-12 col-md-5 col-lg-4">
               <header>
@@ -84,11 +84,12 @@
           </div>
         </div>
 	</section>
-    <div id="bg-review">
+    <div id="bg-review"  class="pos-rel">
         <blockquote>
             <div class="wrapper row">
+                <div class="col-sm-2"></div>
                 <div class="col-sm-4 col-md-2">
-                    <a href="https://www.coffeereview.com/" target="_blank"><img class="img-responsive" src="img/logo-coffee-review.png" alt="coffeereview.com link" data-rjs="2"></a><!--coffee review logo-->
+                    <a class="pos-abs" href="https://www.coffeereview.com/" target="_blank"><img class="img-responsive" src="img/logo-coffee-review.png" alt="coffeereview.com link" data-rjs="2"></a>
                 </div>
                 <div class="col-sm-6 col-md-8">
                     <p>"This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.""</p>
@@ -106,11 +107,11 @@
         </header>
         
         <div class="wrapper row">
-            <section id="house" class="col-sm-12 col-md-3">
+            <section id="house" class="col-sm-12 col-md-3 pos-rel">
                 <div class="row">
                     <div class="col-sm-4 col-md-12"> 
-                    <img class="img-responsive" src="img/pkg-wht.png" alt="product image" data-rjs="2">
-                    <img id="icon-98" class="img-responsive" src="img/icon-98.svg" alt="coffee review rating 98" width="40">
+                        <img class="img-responsive" src="img/pkg-wht.png" alt="product image" data-rjs="2">
+                        <img id="icon-98" class="img-responsive pos-abs" src="img/icon-98.svg" alt="coffee review rating 98" width="40">
                     </div>
                     <div class="col-sm-8 col-md-12"> 
                         <header>
@@ -329,10 +330,8 @@
             <h2>Find Us</h2>
         </header>
         <div class="row">
-            
-            <!--google map-->
-            <div class="col-sm-12 col-md-5 com-lg-6">
-                <p class="txt-ctr">Buy directly at our Portland location</p>
+            <p>Buy directly at our Portland location</p>
+            <div class="col-sm-12 col-md-5 com-lg-6"><!--google map-->
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe width="700" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=457%20Market%20St%2C%20Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
@@ -378,15 +377,12 @@
                 <a href="#bg-hero"><img class="img-responsive" src="img/logo-twin-finch-wht.svg" alt="twin finch roastery"></a> <!--small logo-->
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-sm-3">
                 <address>
                     <p><a href="mailto:hello@twinfinch.com">hello@twinfinch.com</a></p>
                     <p>457 NW Market st<br>Portland,OR</p>
                     <p><a href="tel:+13081234567">308.123.4567</a></p>
                 </address>
-            </div>
-
-            <div class="col-sm-4">
                 <ul id="sprites">
                     <li><a href="https://www.facebook.com/" target="_blank"><span>facebook</span></a></li>
                     <li><a href="https://twitter.com/?lang=en" target="_blank"><span>twitter</span></a></li>

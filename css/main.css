@@ -125,11 +125,13 @@ ul {
 }
 
 #bg-hero {
-    background-image: url("../img/bg-img-hero.jpg");
+    background: no-repeat center 100% url("../img/bg-img-hero.jpg");
 }
 
 #process {
     background-image: url("../img/bg-img-process.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer li:first-child a{
@@ -339,7 +341,7 @@ nav a:hover, footer address a:hover {
     border-bottom: .1em solid  #CBAA88;
 }
 
-#brew a:hover {
+#brew a:hover, footer img:hover {
     border-bottom: .1em solid  #CBAA88;
 }
 
@@ -441,9 +443,14 @@ h2 {
 
 
 
-#ship img, #featured span {
+#ship img {
     border: .05em solid #CBAA88;
     padding: .7em;
+}
+
+#featured span {
+    border: .05em solid #CBAA88;
+    padding: 1em .1em;
 }
 
 #process h2 {
@@ -456,6 +463,14 @@ h2 {
 
 h2 {
     margin-bottom: 3em;
+}
+
+footer img {
+    padding-bottom: .5em;
+}
+
+.mapouter {
+    padding-left: 0;
 }
 #bg-hero {
     padding: 10em 0;
@@ -482,28 +497,34 @@ h2 {
 }
 
 #bg-hero .h-rule {
+    margin-top: 3em;
+}
+
+#find input, select, footer form, footer img {
     margin-top: 1em;
 }
 
-#featured h3 {
+#featured h3, form, form #first-name{
     margin-top: 0;
 }
 
 /*---positioning---*/
 
-#house {
-    position: relative;
-}
 
 #icon-98 {
-    position: absolute;
     top: -1em;
     left: 1em;
 }
 
+#featured span {
+    top: -7em;
+    right: 0;
+}
 
-
-
+#review a {
+    top: 0em;
+    left: -10em;
+}
 
 
 
@@ -531,6 +552,17 @@ h2 {
 .h-rule-wht {
     background-color: #FCF2E8;
 }
+
+.pos-rel {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
 
 .txt-ctr, h2 {
     text-align: center;

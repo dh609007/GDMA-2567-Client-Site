@@ -50,33 +50,19 @@ TABLE OF CONTENTS:
 
 /*-----4.0 ELEMENTS-----*/
 
+/*---blockquote---*/
+
+blockquote {
+    background-color: #EBD3B9;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 /*---forms---*/
 
-#find input, textarea { 
-    background-color: #F4EBE4;
-    border: .1em solid #F4EBE4;
-}
-
-#find input { 
-    padding: .5em .3em;
-}
-
-#find input:hover {
-    border-bottom: .1em solid #1F0C00;
-}
-
-textarea:hover {
-    border-bottom: .1em solid #1F0C00;
-}
-
-footer label {
-    display: inline;
-}
-
-footer form input, footer form p {
-    display: inline;
-}
 
 input {
     display: block;
@@ -96,69 +82,6 @@ footer input {
 
 placeholder {
     color: #1F0C00;
-}
-
-/*---customizing select dropdown---*/
-
-.custom-select {
-  position: relative;
-  font-family: oswald, sans-serif;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-
-.select-selected {
-  background-color: #F4EBE4;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #1F0C00 transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #1F0C00 transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #1F0C00;
-    text-transform: lowercase;
-  padding: 8px 10px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #EBD3B9;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-    border-bottom: .1em solid #1F0C00;
-    
 }
 
 
@@ -348,7 +271,7 @@ h3, #ship p:first-child {
         font-size: 1.2rem;
     }
     
-    #bg-hero p a, #featured p, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer {
+    #bg-hero p a, #featured p, blockquote, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer {
         font-size: 1.25rem;
     }
     
@@ -357,7 +280,7 @@ h3, #ship p:first-child {
         font-size: 1.9rem;
     }
     
-    blockquote, #brew p, #brew p:first-child {
+    #brew p, #brew p:first-child {
         font-size: 1.6rem; 
     }
     
@@ -366,7 +289,8 @@ h3, #ship p:first-child {
 
 
 
-/*-----5.0 COMPONENTS-----*/
+/*-----5.0 OBJECTS-----*/
+
 
 /*---framework---*/
 
@@ -408,6 +332,14 @@ nav a:hover, footer address a:hover {
     border-bottom: .1em solid  #CBAA88;
 }
 
+#find input { 
+    padding: .5em .3em;
+}
+
+#find input:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
 #bg-hero p a {
     border: .5px solid #F4EBE4;
     -moz-border-radius: .3em;
@@ -419,6 +351,11 @@ nav a:hover, footer address a:hover {
     display: block;
 } 
 
+#bg-hero p a:hover {
+    border: .5px solid #1F0C00;
+    background-color: #1F0C00;
+}
+
 footer form a {
     border: .5px solid #F4EBE4;
     -moz-border-radius: .3em;
@@ -428,11 +365,6 @@ footer form a {
     border-radius: .3em;
     padding: .1em 2em;
 } 
-
-#bg-hero p a:hover {
-    border: .5px solid #1F0C00;
-    background-color: #1F0C00;
-}
 
 footer form a:hover {
     border: .5px solid #CBAA88;
@@ -456,6 +388,97 @@ footer form a:hover {
     background-color: #EBD3B9;
 }
 
+.btn:visited {
+    color: #F4EBE4; 
+}
+
+
+/*---footer---*/
+
+footer label {
+    display: inline;
+}
+
+footer form input, footer form p {
+    display: inline;
+}
+
+/*---form---*/
+
+#find input, textarea { 
+    background-color: #F4EBE4;
+    border: .1em solid #F4EBE4;
+}
+
+textarea:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
+
+/*------customizing select button------*/
+
+.custom-select {
+  position: relative;
+  font-family: oswald, sans-serif;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #F4EBE4;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #1F0C00 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #1F0C00 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #1F0C00;
+    text-transform: lowercase;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #EBD3B9;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    border-bottom: .1em solid #1F0C00;
+}
+
+/*---sprites---*/
+
 #sprites li a {
     display: inline-block;
 }
@@ -469,10 +492,6 @@ footer form a:hover {
     background-position: 0 -25px;
 }
 
-
-.btn:visited {
-    color: #F4EBE4; 
-}
 
 @media only screen and (min-width: 768px){
     .btn, #bg-hero p a {
@@ -488,12 +507,15 @@ footer form a:hover {
 
 /*---navigation---*/
 
-#bg-dk-brn {
-    padding: .1em 0;
-}
 
 nav li {
     margin-right: 4.5em;
+}
+
+@media only screen and (max-width: 768px){
+    nav li {
+        margin-right: 2em;
+    }
 }
 
 /*---frames---*/
@@ -503,8 +525,6 @@ h2 {
     border: .05em solid #CBAA88;
     padding: .6em .8em;
 }
-
-
 
 #ship img {
     border: .05em solid #CBAA88;
@@ -528,6 +548,10 @@ h2 {
     margin-bottom: 3em;
 }
 
+blockquote .col-sm-6, blockquote .col-sm-4 {
+    margin-left: calc(100%*1/12);
+}
+
 footer img {
     padding-bottom: .5em;
 }
@@ -535,11 +559,15 @@ footer img {
 .mapouter {
     padding-left: 0;
 }
+
+#bg-dk-brn {
+    padding: .1em 0;
+}
 #bg-hero {
     padding: 10em 0;
 }
 
-#bg-review, #ship {
+#ship {
     padding: 1em 0;
 }
 
@@ -586,13 +614,19 @@ footer img {
     left: 1em;
 }
 
-#featured span {
-    top: -10em;
-    right: -8em;
+#featured img {
+    top: -8em;
+    right: 0em;
 }
 
-#bg-review a {
-    top: 0em;
+@media only screen and (max-width: 768px){
+    #featured .pos-abs {
+        position: static;
+    }
+}
+
+blockquote img {
+    top: .5em;
     left: 0em;
 }
 
@@ -639,6 +673,8 @@ footer img {
 }
 
 
+
+
 .txt-ctr, h2 {
     text-align: center;
 }
@@ -658,9 +694,9 @@ footer img {
     background-color: #FCF2E8;
 }
 
-#bg-review {
-    background-color: #EBD3B9;
-}
+
+
+
 
 
 

@@ -98,6 +98,69 @@ placeholder {
     color: #1F0C00;
 }
 
+/*---customizing select dropdown---*/
+
+.custom-select {
+  position: relative;
+  font-family: oswald, sans-serif;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #F4EBE4;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #1F0C00 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #1F0C00 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #1F0C00;
+    text-transform: lowercase;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #EBD3B9;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    border-bottom: .1em solid #1F0C00;
+    
+}
+
 
 /*---lists---*/
 
@@ -221,7 +284,7 @@ blockquote footer {
     font-size: .8rem;
 }
 
-.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input, textarea {
+.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input, textarea, .custom-select {
     font-size: .9rem;
 }
 
@@ -243,7 +306,7 @@ h3, #ship p:first-child {
         font-size: 1.2rem;
     }
 
-    nav, #featured p, .btn, #find input, textarea {
+    nav, #featured p, .btn, #find input, textarea, .custom-select {
         font-size: .8rem;
     }
     
@@ -285,7 +348,7 @@ h3, #ship p:first-child {
         font-size: 1.2rem;
     }
     
-    #bg-hero p a, #featured p, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, textarea, footer {
+    #bg-hero p a, #featured p, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer {
         font-size: 1.25rem;
     }
     
@@ -500,12 +563,19 @@ footer img {
     margin-top: 3em;
 }
 
-#find input, select, footer form, footer img {
+#find input, .custom-select, footer form, footer img, footer input {
     margin-top: 1em;
 }
 
 #featured h3, form, form #first-name{
     margin-top: 0;
+}
+
+@media only screen and (max-width: 768px){
+    #featured .h-rule {
+        margin-bottom: 1em;
+    }
+
 }
 
 /*---positioning---*/
@@ -517,13 +587,18 @@ footer img {
 }
 
 #featured span {
-    top: -7em;
-    right: 0;
+    top: -10em;
+    right: -8em;
 }
 
-#review a {
+#bg-review a {
     top: 0em;
-    left: -10em;
+    left: 0em;
+}
+
+#ship img {
+    top: -3.5em;
+    left: 2em;
 }
 
 

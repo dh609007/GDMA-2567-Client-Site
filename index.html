@@ -45,9 +45,9 @@
        
 	<section id="featured">
         <div class="wrapper row">
-          <div class="col-sm-12 col-md-7 f-right pos-rel">  <!--bag images and frames-->
+          <div class="col-sm-12 col-md-7 f-right pos-rel"> 
               <img class="pos-rel" src="img/pkg-blk.png" alt="smaller bag image" data-rjs="2">
-              <span class="pos-abs"><img class="" src="img/pkg-wht.png" alt="bag image" data-rjs="2"></span>
+              <span class="col-sm-10 img-responsive pos-abs"><img class="" src="img/pkg-wht.png" alt="bag image" data-rjs="2"></span>
               <!--span tags to create border around large image-->
           </div>
           <div class="col-sm-12 col-md-5 col-lg-4">
@@ -74,7 +74,7 @@
                       <p class="description">Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
                   </div>
                   <div class="col-sm-5">
-                      <img class="img-responsive" src="img/icon-indonesia.svg" alt="">  <!--country icon-->
+                      <img src="img/icon-indonesia.svg" alt="">  <!--country icon-->
                       <p>eastern java, Indonesia</p>
                   </div>
                   <div class="col-sm-12 col-md-6">
@@ -84,9 +84,9 @@
           </div>
         </div>
 	</section>
-    <div id="bg-review"  class="pos-rel">
+    <div id="bg-review">
         <blockquote>
-            <div class="wrapper row">
+            <div class="wrapper row pos-rel">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-4 col-md-2">
                     <a class="pos-abs" href="https://www.coffeereview.com/" target="_blank"><img class="img-responsive" src="img/logo-coffee-review.png" alt="coffeereview.com link" data-rjs="2"></a>
@@ -111,7 +111,7 @@
                 <div class="row">
                     <div class="col-sm-4 col-md-12"> 
                         <img class="img-responsive" src="img/pkg-wht.png" alt="product image" data-rjs="2">
-                        <img id="icon-98" class="img-responsive pos-abs" src="img/icon-98.svg" alt="coffee review rating 98" width="40">
+                        <img id="icon-98" class="pos-abs" src="img/icon-98.svg" alt="coffee review rating 98" width="40">
                     </div>
                     <div class="col-sm-8 col-md-12"> 
                         <header>
@@ -133,7 +133,7 @@
                             <p class="description">Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
                         <div class="row">
                             <div class="col-sm-4 col-md-12">
-                                <img class="img-responsive" src="img/icon-peru.svg" alt="" width="70"> <!--country image-->
+                                <img src="img/icon-peru.svg" alt="" width="50"> <!--country image-->
                             </div>
                             <div class="col-sm-8 col-md-12">
                                 <p>Cajamarca &amp; Moyobamba Regions, Peru</p>
@@ -168,7 +168,7 @@
                         <p class="description">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-mex.svg" alt="" width="150"> <!--country image-->
+                            <img src="img/icon-mex.svg" alt="" width="70"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>La Chiapas, Mexico</p>
@@ -206,7 +206,7 @@
                         <p class="description">Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-latin-am.svg" alt="" width="120"> <!--country image-->
+                            <img src="img/icon-latin-am.svg" alt="" width="70"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America</p>
@@ -244,7 +244,7 @@
                         <p class="description">Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
                     <div class="row">
                         <div class="col-sm-4 col-md-12">
-                            <img class="img-responsive" src="img/icon-world.svg" alt="" width="120"> <!--country image-->
+                            <img src="img/icon-world.svg" alt="" width="70"> <!--country image-->
                         </div>
                         <div class="col-sm-8 col-md-12">
                             <p>Latin America, Africa &amp; Indonesia</p>
@@ -319,8 +319,8 @@
                 <p>Your satisfaction is guaranteed</p>
                 <p>Orders ship quickly and usually arrive in three business days</p>
             </div>
-            <div class="col-md-5 col-lg-4">
-                <img class="img-responsive" src="img/img-ship.jpg" alt="" data-rjs="2">
+            <div class="col-md-5 col-lg-4 pos-rel">
+                <img class="img-responsive pos-abs" src="img/img-ship.jpg" alt="" data-rjs="2">
             </div>
         </div>
     </div>
@@ -348,13 +348,15 @@
                     <input type="text" name="last-name" id="last-name" placeholder="last name">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="email">
-                    <select name="roast">
-                        <option value="feat">Featured</option>
-                        <option value="house">House Blend</option>
-                        <option value="sunrise">Sunrise</option>
-                        <option value="midnight">Midnight</option>
-                        <option value="espresso">Espresso</option>
-                    </select>
+                    <div class="custom-select">
+                        <select name="roast">
+                            <option value="feat">Featured</option>
+                            <option value="house">House Blend</option>
+                            <option value="sunrise">Sunrise</option>
+                            <option value="midnight">Midnight</option>
+                            <option value="espresso">Espresso</option>
+                        </select>
+                    </div>
                 </div>
             
                 <textarea class="col-sm-12 col-md-3 col-lg-6" name="comments" id="comments" rows="10" cols="100" placeholder="comments"></textarea>

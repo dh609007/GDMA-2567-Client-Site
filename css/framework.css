@@ -25,6 +25,9 @@
 
 .img-responsive {
 	max-width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 figure {

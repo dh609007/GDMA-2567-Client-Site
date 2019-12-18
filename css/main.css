@@ -635,6 +635,7 @@ footer img {
 }
 
 @media only screen and (min-width: 768px){
+    
     #featured .h-rule {
         margin-bottom: .7em;
     }
@@ -658,6 +659,21 @@ footer img {
         margin-top: 3.5em;
     }
 }
+
+@media only screen and (max-width: 768px){
+    #featured .col-sm-5 {
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #ship .col-sm-8 {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+
 
 /*---positioning---*/
 

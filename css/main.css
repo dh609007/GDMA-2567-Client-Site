@@ -20,11 +20,12 @@ TABLE OF CONTENTS:
 /*-------------------
 4.0	ELEMENTS
 ---------------------*/
-/*---FORMS---*/
-/*---LISTS---*/
-/*---MEDIA---*/
-/*---TABLES---*/
-/*---TYPOGRAPHY---*/
+/*---blockquote---*/
+/*---forms---*/
+/*---lists---*/
+/*---media---*/
+/*---typography---*/
+/*---font sizes---*/
 
 /*-------------------------
 5.0	OBJECTS
@@ -34,16 +35,21 @@ TABLE OF CONTENTS:
 /*-------------------------
 6.0	COMPONENTS
 ---------------------------*/
-/*---BUTTONS---*/
-/*---HEADER---*/
-/*---NAVIGATION---*/
+/*---buttons---*/
+/*---footer---*/
+/*---form---*/
+/*---customizing select button---*/
+/*---sprites---*/
+/*---navigation---*/
+/*---frames---*/
+/*---spacing---*/
+/*---positioning---*/
 
 /*-------------------------
 7.0	UTILITIES
 ---------------------------*/
-/*---ALIGNMENT---*/
-/*---COLORS---*/
-/*---SIZE---*/
+/*---colors---*/
+
 
 
 
@@ -117,6 +123,10 @@ ul {
 #process {
     background-image: url("../img/bg-img-process.jpg");
     background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
 }
 
@@ -153,11 +163,13 @@ html {
 }
 
 body, #featured .description, #roasts .description {
-    font-family: aaux next, sans-serif;
+    font-family: "aaux-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts p, #brew p:first-child, #ship p:first-child, input, #find p, textarea, footer {
-    font-family: oswald, sans-serif;
+    font-family: "oswald", sans-serif;
 }
 
 blockquote footer, h2, #bg-hero p {
@@ -192,6 +204,22 @@ blockquote footer {
     color: #1F0C00; 
 }
 
+#ship {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    #ship, #find p {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #ship, #find p {
+        text-align: left;
+    }
+}
+
 
 /*---font-sizes---*/
 
@@ -204,11 +232,16 @@ blockquote footer {
 }
 
 #bg-hero p a, .btn, #bg-hero, footer, blockquote footer {
+    font-size: .7rem;
+}
+
+#featured a {
     font-size: .8rem;
 }
 
 .description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input, textarea, .custom-select {
     font-size: .9rem;
+    line-height: 1.2rem;
 }
 
 h2 {
@@ -225,7 +258,7 @@ h3, #ship p:first-child {
     font-size: 2.5rem;
     }
 
-    #bg-hero p, footer label {
+    #bg-hero p {
         font-size: 1.2rem;
     }
 
@@ -233,7 +266,7 @@ h3, #ship p:first-child {
         font-size: .8rem;
     }
     
-    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer, blockquote footer, #roasts p {
+    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer, blockquote footer, footer label, #roasts p {
         font-size: .8rem;
     }
     
@@ -256,36 +289,35 @@ h3, #ship p:first-child {
 
 @media only screen and (min-width: 1024px){ 
     nav {
-        font-size: 1.0rem;
+        font-size: .8rem;
     }
     
     #bg-hero p span {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     
     #bg-hero p {
-        font-size: 1.9rem;
-    }
-    
-    .btn {
         font-size: 1.2rem;
     }
     
-    #bg-hero p a, #featured p, blockquote, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer {
-        font-size: 1.25rem;
+    .btn,  #bg-hero p a {
+        font-size: .8rem;
+    }
+    
+   #featured p, blockquote, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer, footer label {
+        font-size: 1rem;
     }
     
     
     h3, h2, #ship p:first-child {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
     
     #brew p, #brew p:first-child {
-        font-size: 1.6rem; 
+        font-size: 1.1rem; 
     }
     
 }
-
 
 
 
@@ -381,6 +413,7 @@ footer form a:hover {
     background-color: #1F0C00;
     padding: .5em 2em;
     display: block;
+    text-align: center;
 }
 
 .btn:hover {
@@ -396,11 +429,11 @@ footer form a:hover {
 /*---footer---*/
 
 footer label {
-    display: inline;
+    display: inline-block;
 }
 
 footer form input, footer form p {
-    display: inline;
+    display: inline-block;
 }
 
 /*---form---*/
@@ -418,59 +451,59 @@ textarea:hover {
 /*------customizing select button------*/
 
 .custom-select {
-  position: relative;
-  font-family: oswald, sans-serif;
+    position: relative;
+    font-family: oswald, sans-serif;
 }
 
 .custom-select select {
-  display: none; /*hide original SELECT element: */
+    display: none; 
 }
 
 .select-selected {
-  background-color: #F4EBE4;
+    background-color: #F4EBE4;
 }
 
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #1F0C00 transparent transparent transparent;
+
+.select-selected:after { /* Style the arrow inside the select element: */
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #1F0C00 transparent transparent transparent;
 }
 
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #1F0C00 transparent;
-  top: 7px;
+
+.select-selected.select-arrow-active:after { /* Point the arrow upwards when the select box is open (active): */
+    border-color: transparent transparent #1F0C00 transparent;
+    top: 7px;
 }
 
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #1F0C00;
+
+.select-items div,.select-selected { /* style the items (options), including the selected item: */
+    color: #1F0C00;
     text-transform: lowercase;
-  padding: 8px 10px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
 }
 
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #EBD3B9;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
+
+.select-items { /* Style items (options): */
+    position: absolute;
+    background-color: #EBD3B9;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
+
+.select-hide { /* Hide the items when the select box is closed: */
+    display: none;
 }
 
 .select-items div:hover, .same-as-selected {
@@ -517,6 +550,7 @@ nav li {
         margin-right: 2em;
     }
 }
+
 
 /*---frames---*/
 
@@ -567,6 +601,7 @@ footer img {
     padding: 10em 0;
 }
 
+
 #ship {
     padding: 1em 0;
 }
@@ -588,7 +623,7 @@ footer img {
 }
 
 #bg-hero .h-rule {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 #find input, .custom-select, footer form, footer img, footer input {
@@ -599,11 +634,29 @@ footer img {
     margin-top: 0;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     #featured .h-rule {
-        margin-bottom: 1em;
+        margin-bottom: .7em;
+    }
+    
+    #buy-now-btn {
+        margin-top: 2.4em;
     }
 
+}
+
+@media only screen and (min-width: 1024px){
+    #bg-hero .col-sm-5 {
+        margin-top: 4em;
+}
+
+    #bg-hero .col-sm-5, #bg-hero .col-sm-12 {
+        margin-left: 4em;
+    }
+    
+    #buy-now-btn {
+        margin-top: 3.5em;
+    }
 }
 
 /*---positioning---*/
@@ -671,8 +724,6 @@ blockquote img {
 .pos-abs {
     position: absolute;
 }
-
-
 
 
 .txt-ctr, h2 {
